@@ -50,3 +50,10 @@ header {
 .hidden-singer-body {
     display: none;
 }
+
+/* Timer Section */
+section#timer {
+    background-image: linear-gradient(var(--faded-red), var(--faded-red)), url('../images/timer.jpg');
+    background-size: cover;
+    background-position: center;
+}
