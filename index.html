@@ -4,16 +4,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Egyptain Party</title>
+    <title>Egyptian Party</title>
 
     <link rel="stylesheet" href="./css/all.min.css" />
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
-    <link rel="stylesheet" href="./js/main.js" />
+    <link rel="stylesheet" href="./css/style.css" />
 </head>
 
 <body>
 
-    
+    <!-- Header -->
+    <header class="position-relative">
+        <aside id="drawer" class="vh-100 bg-black position-absolute overflow-hidden">
+            <div class="w-100 h-100 position-relative p-4">
+                <i id="close-drawer" class="fa-solid fa-close fa-2x position-absolute end-0 top-0 m-4"></i>
+                <div class="mt-5 pt-3 d-flex flex-column gap-5">
+                    <a href="#" class="text-decoration-none fs-4">Home</a>
+                    <a href="#" class="text-decoration-none fs-4">Duration</a>
+                    <a href="#" class="text-decoration-none fs-4">Details</a>
+                    <a href="#" class="text-decoration-none fs-4">Contact</a>
+                </div>
+            </div>
+        </aside>
+        <div id="header-content" class="h-100 text-white d-flex flex-column justify-content-center align-items-center p-3">
+            <h1 class="fw-medium display-3">Egyptian Party</h1>
+            <p>Let's have fun</p>
+            <div id="open-drawer" class="d-flex align-items-baseline gap-2 align-self-start">
+                <i class="fa-solid fa-bars fs-4"></i>
+                <p class="mb-0 fs-3">open</p>
+            </div>
+        </div>
+    </header>
 
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/code.jquery.com_jquery-3.7.0.min.js"></script>

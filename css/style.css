@@ -1,0 +1,37 @@
+:root {
+    --faded-red: rgba(214, 46, 51, 0.6);
+    --red: rgb(214, 46, 51);
+}
+
+/* Header */
+header {
+    height: 41.25rem;
+    background-image: linear-gradient(var(--faded-red), var(--faded-red)), url('../images/header.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#open-drawer {
+    cursor: pointer;
+}
+
+#drawer {
+    width: 0;
+}
+
+#drawer div i {
+    cursor: pointer;
+}
+
+#drawer div * {
+    color: white;
+    transition: 0.15s color;
+    -webkit-transition: 0.15s color;
+    -moz-transition: 0.15s color;
+    -ms-transition: 0.15s color;
+    -o-transition: 0.15s color;
+}
+
+#drawer div *:hover {
+    color: var(--red);
+}
