@@ -35,3 +35,18 @@ header {
 #drawer div *:hover {
     color: var(--red);
 }
+
+/* Singers Section */
+.singer-header {
+    background-color: var(--faded-red);
+    cursor: pointer;
+}
+
+.singer-body {
+    background-color: lightgray;
+    padding: 1rem;
+}
+
+.hidden-singer-body {
+    display: none;
+}
