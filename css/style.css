@@ -57,3 +57,26 @@ section#timer {
     background-size: cover;
     background-position: center;
 }
+
+/* Footer */
+.social-link {
+    cursor: pointer;
+    width: 2.1875rem;
+    height: 2.1875rem;
+    border: 1px solid gray;
+    color: gray;
+}
+
+.social-link:hover {
+    color: white;
+    border-color: var(--red);
+    background-color: var(--red);
+}
+
+input.form-control, textarea.form-control, button.btn.btn-danger {
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}

@@ -16,15 +16,15 @@ $('.singer-header').click(function (e) {
     $(this).next().slideToggle(500);
 });
 
-(function () {
+$(document).ready(function () {
     const eventDate = new Date(2023, 9, 25);
     secondsToEvent = Math.ceil(Math.abs(eventDate - new Date()) / 1000);
     setTimerTexts();
     eventIntervalId = setInterval(setTimerTexts, 1000);
-})()
+});
 
 function setTimerTexts() {
-    if (secondsToEvent <= 0) {
+    if (secondsToEvent < 0) {
         clearInterval(eventIntervalId);
         return;
     }
@@ -42,3 +42,11 @@ function setTimerTexts() {
 
     secondsToEvent--;
 }
+
+$('textarea.form-control').keyup(function (e) {
+    let charactersLeft = 100 - e.target.value.length
+    if (charactersLeft <= 0) {
+        charactersLeft = 'your available character finished';
+    }
+    $('#characters-left').text(charactersLeft);
+});
